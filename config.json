@@ -1,6 +1,0 @@
-{
-  "bind_addr": ":80",
-  "target_url": "http://pony/",
-  "redirect_code": 301
-}
-
