@@ -17,9 +17,9 @@ type ConfigStruct struct {
 var config ConfigStruct
 
 func init() {
-	flag.StringVar(&(config.TargetURL), "target", "http://127.0.0.1:1234/", "url to reditrect to")
-	flag.StringVar(&(config.BindAddr), "bind", ":80", "address to bind to")
-	flag.IntVar(&(config.RedirectCode), "code", 301, "redirect with this code")
+	flag.StringVar(&config.TargetURL, "target", "http://127.0.0.1:1234/", "url to reditrect to")
+	flag.StringVar(&config.BindAddr, "bind", ":80", "address to bind to")
+	flag.IntVar(&config.RedirectCode, "code", 301, "redirect with this code")
 }
 
 func main() {
